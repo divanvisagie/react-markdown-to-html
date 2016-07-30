@@ -6,7 +6,8 @@
   "dependencies": {
     "jquery": "^1.11.2",
     "lodash": "^3.5.0",
-    "marked": "^0.3.2"
+    "marked": "^0.3.2",
+    "highlight.js": "^9.5.0"
   },
   "peerDependencies": {
     "react": ">=0.10.0"
