@@ -6,6 +6,12 @@ var React = require('react');
 var marked = require('marked');
 var _ = require('lodash');
 
+marked.setOptions({
+  highlight: function (code) {
+    return require('highlight.js').highlightAuto(code).value
+  }
+})
+
 module.exports = React.createClass({
     displayName: "Markdown2HTML",
     propTypes:{
