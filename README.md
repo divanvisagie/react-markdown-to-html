@@ -12,26 +12,28 @@ Demo at [opensourceprojects.robbestad.com][2]
 
 
 #### With JSX
-
-    var Markdown2HTML = require('react-markdown-to-html');
-    MyComponent = React.createClass({
-      render: function() {
-         return (
+```js
+var Markdown2HTML = require('react-markdown-to-html');
+MyComponent = React.createClass({
+    render: function() {
+        return (
            <Markdown2HTML src="README.md" />
-        );
-      }
-    });
+    );
+  }
+});
+```
 
 #### Without JSX
-
-     var Markdown2HTML = require('react-markdown-to-html');
-     MyComponent = React.createClass({displayName: "MyComponent",
-       render: function() {
-          return (
+```js
+var Markdown2HTML = require('react-markdown-to-html');
+MyComponent = React.createClass({displayName: "MyComponent",
+    render: function() {
+        return (
             React.createElement(Markdown2HTML, {src: "README.md"})
-         );
-       }
-     });
+    );
+  }
+});
+```
 
 [1]: https://facebook.github.io/react
 [2]: http://opensourceprojects.robbestad.com/#/markdown
